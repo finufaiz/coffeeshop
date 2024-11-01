@@ -1,0 +1,400 @@
+
+
+[
+    {
+        "id": 1,
+        "name": "Cappuccino",
+        "category": "Hot Drinks",
+        "per_serve": "160 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Hot brew coffee.",
+        "price": "1.20",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/cappi.webp"
+    },
+    {
+        "id": 2,
+        "name": "Latte",
+        "category": "Hot Drinks",
+        "per_serve": "160 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Hot brew coffee.",
+        "price": "1.20",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/latte.webp"
+    },
+    {
+        "id": 3,
+        "name": "Flat White",
+        "category": "Hot Drinks",
+        "per_serve": "130 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Hot brew coffee.",
+        "price": "1.30",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/flatwhite.webp"
+    },
+    {
+        "id": 4,
+        "name": "Macchiato",
+        "category": "Hot Drinks",
+        "per_serve": "150 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Hot brew coffee.",
+        "price": "1.30",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/Macchiato.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Piccolo",
+        "category": "Hot Drinks",
+        "per_serve": "120 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Hot brew coffee.",
+        "price": "1.00",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/Piccolo.webp"
+    },
+    {
+        "id": 6,
+        "name": "Americano",
+        "category": "Hot Drinks",
+        "per_serve": "180 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Hot brew coffee.",
+        "price": "1.00",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/america.webp"
+    },
+    {
+        "id": 7,
+        "name": "Espresso - Single",
+        "category": "Hot Drinks",
+        "per_serve": "30 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Hot brew coffee.",
+        "price": "0.50",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/Espresso-Single.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Espresso - Double",
+        "category": "Hot Drinks",
+        "per_serve": "60 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Hot brew coffee.",
+        "price": "0.80",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/doubleexp.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Curtaddo",
+        "category": "Hot Drinks",
+        "per_serve": "130 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Hot brew coffee.",
+        "price": "1.30",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/Curtaddo.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Spanish Hot",
+        "category": "Hot Drinks",
+        "per_serve": "160 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Hot brew coffee.",
+        "price": "1.20",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/SpanishHot.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Caramel Hot",
+        "category": "Hot Drinks",
+        "per_serve": "180 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Hot brew coffee.",
+        "price": "1.20",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/carammal.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Salted Caramel Hot",
+        "category": "Hot Drinks",
+        "per_serve": "160 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Hot brew coffee.",
+        "price": "1.30",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/saltedcar.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Mocha Hot",
+        "category": "Hot Drinks",
+        "per_serve": "180 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Hot brew coffee.",
+        "price": "1.20",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/classic-mocha.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Hot Chocolate",
+        "category": "Hot Drinks",
+        "per_serve": "180 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Hot brew coffee.",
+        "price": "1.20",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/hot-chocolate-coffee-5.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Nescafe",
+        "category": "Hot Drinks",
+        "per_serve": "160 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Hot brew coffee.",
+        "price": "0.50",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/nescaf.jpg"
+    },
+    {
+        "id": 16,
+        "name": "V-60",
+        "category": "Hot Drinks",
+        "per_serve": "300 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Hot brew coffee.",
+        "price": "1.50",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/v-60.jpg"
+    },
+    {
+        "id": 17,
+        "name": "White Mocha Hot",
+        "category": "Hot Drinks",
+        "per_serve": "160 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Hot brew coffee.",
+        "price": "1.30",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/whitehotmocha.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Caramel Macchiato",
+        "category": "Hot Drinks",
+        "per_serve": "130 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Hot brew coffee.",
+        "price": "1.50",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/CaramelMacchiato.webp"
+    },
+    {
+        "id": 1,
+        "name": "Spanish Latte",
+        "category": "Cool Drinks",
+        "per_serve": "350 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting cold brew coffee.",
+        "price": "1.20",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/spanishlatte.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Caramel Latte",
+        "category": "Cool Drinks",
+        "per_serve": "350 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting cold brew coffee.",
+        "price": "1.20",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/carammellatte.webp"
+    },
+    {
+        "id": 3,
+        "name": "Salted Caramel Latte",
+        "category": "Cool Drinks",
+        "per_serve": "350 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting cold brew coffee.",
+        "price": "1.30",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/saltedcaramel.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Pistachio Latte",
+        "category": "Cool Drinks",
+        "per_serve": "350 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting cold brew coffee.",
+        "price": "1.50",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/Pistachio%20Latte.webp"
+    },
+    {
+        "id": 5,
+        "name": "Iced Latte",
+        "category": "Cool Drinks",
+        "per_serve": "350 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting cold brew coffee.",
+        "price": "1.20",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/iced-latte.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Iced Americano",
+        "category": "Cool Drinks",
+        "per_serve": "350 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting cold brew coffee.",
+        "price": "1.00",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/icedamericano.webp"
+    },
+    {
+        "id": 7,
+        "name": "Mocha",
+        "category": "Cool Drinks",
+        "per_serve": "350 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting cold brew coffee.",
+        "price": "1.20",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/icedmocha.jpg"
+    },
+    {
+        "id": 8,
+        "name": "White Mocha",
+        "category": "Cool Drinks",
+        "per_serve": "350 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting cold brew coffee.",
+        "price": "1.30",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/whitemocha.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Affogato",
+        "category": "Cool Drinks",
+        "per_serve": "100 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting cold brew coffee.",
+        "price": "1.20",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/Affogato.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Season Shaken",
+        "category": "Cool Drinks",
+        "per_serve": "350 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting cold brew coffee.",
+        "price": "1.30",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/shaken.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Peach Iced Tea",
+        "category": "Cool Drinks",
+        "per_serve": "350 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting cold brew tea.",
+        "price": "1.20",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/peach.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Lemon Iced Tea",
+        "category": "Cool Drinks",
+        "per_serve": "350 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting cold brew tea.",
+        "price": "1.20",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/lemon.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Raspberry Iced Tea",
+        "category": "Cool Drinks",
+        "per_serve": "350 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting cold brew tea.",
+        "price": "1.20",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/rasberryice.jpg"
+    },
+    {
+        "id": 1,
+        "name": "Strawberry Mojito",
+        "category": "Mojito",
+        "per_serve": "350 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Mojito.",
+        "price": "1.00",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/Mojito.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Blueberry Mojito",
+        "category": "Mojito",
+        "per_serve": "350 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Mojito.",
+        "price": "1.00",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/blueberry.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Passionfruit Mojito",
+        "category": "Mojito",
+        "per_serve": "350 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Mojito.",
+        "price": "1.00",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/passiofruit.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Raspberry Mojito",
+        "category": "Mojito",
+        "per_serve": "350 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting Mojito.",
+        "price": "1.00",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/roseberry.webp"
+    },
+    {
+        "id": 1,
+        "name": "Extra Shot",
+        "category": "Extra",
+        "per_serve": "30 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting addition.",
+        "price": "0.30",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/extra.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Extra Sweet",
+        "category": "Extra",
+        "per_serve": "30 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting addition.",
+        "price": "0.20",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/sugr.webp"
+    },
+    {
+        "id": 3,
+        "name": "Extra Sauce",
+        "category": "Extra",
+        "per_serve": "30 g",
+        "description": "This mix of amazing ingredients makes for a unique-tasting addition.",
+        "price": "0.20",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/ketchu.jpg"
+    },
+    {
+        "id": 1,
+        "name": "Tiramisu",
+        "category": "Pastree",
+        "per_serve": "1N",
+        "description": "This mix of amazing ingredients makes for a unique-tasting dessert.",
+        "price": "2.20",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/tiramisu.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Sansubastan",
+        "category": "Pastree",
+        "per_serve": "1N",
+        "description": "This mix of amazing ingredients makes for a unique-tasting dessert.",
+        "price": "2.00",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/sansb.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Red Velvet",
+        "category": "Pastree",
+        "per_serve": "1N",
+        "description": "This mix of amazing ingredients makes for a unique-tasting dessert.",
+        "price": "2.00",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/redvel.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Mini Lotus",
+        "category": "Pastree",
+        "per_serve": "1N",
+        "description": "This mix of amazing ingredients makes for a unique-tasting dessert.",
+        "price": "0.70",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/minilot.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Mini Pistachio",
+        "category": "Pastree",
+        "per_serve": "1N",
+        "description": "This mix of amazing ingredients makes for a unique-tasting dessert.",
+        "price": "0.70",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/minipist.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Mini Zafron",
+        "category": "Pastree",
+        "per_serve": "1N",
+        "description": "This mix of amazing ingredients makes for a unique-tasting dessert.",
+        "price": "0.70",
+        "image": "https://cofffeeshop.hashtechglobal.com/images/minizaf.webp"
+    }
+]
