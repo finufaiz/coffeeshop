@@ -238,3 +238,6 @@ header {
 .terms-and-condition {
     font-size: 12px;
 }
+#no-of-items{
+    border: 0;
+}

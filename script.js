@@ -1,6 +1,7 @@
 $(document).ready(function () {
     mail_url = "https://script.google.com/macros/s/AKfycbxl89M-M-MggHi4c8RAjpQUT3QezF373Du73nToNVu_WnySpqpX9SD43JjOuWxbJAQu/exec"
     cart_datas = JSON.parse(localStorage.getItem('items')) || [];
+    $('#no-of-items').html(`${cart_datas.length}`)
     console.log('cart:', cart_datas)
     $.ajax({
         url: "data.json",
@@ -71,7 +72,7 @@ $(document).ready(function () {
                             $(this).find(".add-item-btn").hide()
                             $(this).find(".item-count").show()
                             $(".total-price").show()
-                            $('#no-of-items').text(`${cart_datas.length}`)
+                            // $('#no-of-items').html(`${cart_datas.length}`)
 
                         }
                     }
@@ -111,7 +112,7 @@ $(document).ready(function () {
                 });
                 localStorage.setItem('items', JSON.stringify(items));
                 let ls = JSON.parse(localStorage.getItem('items'));
-                $('#no-of-items').html(`${ls.length}`)
+                $('#no-of-items').text(`${ls.length}`)
                 console.log("Stored items in localStorage:", ls);
                 console.log("no of items in localStorage:", ls.length);
 
