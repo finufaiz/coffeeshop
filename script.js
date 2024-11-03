@@ -205,17 +205,15 @@ $(document).ready(function () {
     });
 
     $("#order-submit-btn").on('click', function () {
+        $('#complete-order').hide();
+        $('#order-in-process').show();
         let ls = JSON.parse(localStorage.getItem('items'));
         let completedRequests = 0;
         ls.forEach(function (data) {
             $("#submit-form").submit((e) => {
                 e.preventDefault()
                 $('#f-details').empty()
-                // $('#f-name').val(data.name)
-                // $('#f-price').val(data.price)
-                // $('#f-quantity').val(data.quantity)
-                // let total=data.quantity*data.price
-                // $('#f-total').val(total)
+               
                 let total = data.quantity * data.price
 
                 details_html = `
@@ -227,14 +225,6 @@ $(document).ready(function () {
                     `
                 $('#f-details').append(details_html)
 
-                // if (completedRequests === ls.length-1) {
-                //     $('#f-details').append(
-                //         `
-                //         <input type="text" value="${total}" id="f-total" name="total" style="display: none;">
-                //         `
-                //     )
-                // }
-
                 $.ajax({
                     url: mail_url,
                     data: $("#submit-form").serialize(),
@@ -243,7 +233,8 @@ $(document).ready(function () {
                         console.log("response", response)
                         completedRequests++;
                         if (completedRequests === ls.length) {
-                            alert("Form submitted successfully")
+                            localStorage.removeItem('items');
+                            alert("Order completed successfully")
                             window.location.reload()
                         }
                     },

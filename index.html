@@ -82,10 +82,7 @@
 
 
 
-        <section>
-            <div id="order-completed" style="display: none;">
-            </div>
-        </section>
+
 
         <section id="total-price" style="display: none;">
             <div><span type="text" id="no-of-items"></span>&nbsp;item added</div>
@@ -94,6 +91,11 @@
         </section>
 
     </main>
+    <section>
+        <div id="order-in-process" style="display: none;">
+            please wait until order is completed
+        </div>
+    </section>
     <section class="complete-order-section" id="complete-order" style="display: none;">
         <div class="close-btn" id="closebutton">X</div>
         <div class="complete-order-title">Complete order</div>
@@ -101,8 +103,8 @@
         <form id="submit-form" action="">
 
             <div id="f-details"></div>
-            
-<!--             
+
+            <!--             
             <input type="text" value="" id="f-name" name="name" style="display: none;">
             <input type="text" value="" id="f-price" name="price" style="display: none;">
             <input type="text" value="" id="f-quantity" name="quantity" style="display: none;">
