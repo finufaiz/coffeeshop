@@ -106,7 +106,8 @@ $(document).ready(function () {
                         }
 
                     }
-                    else if (existingItem) {
+                    //else if (existingItem) 
+                    else {
                         items = items.filter(item => item.name !== itemName);
                     }
                 });
@@ -114,8 +115,6 @@ $(document).ready(function () {
                 let ls = JSON.parse(localStorage.getItem('items'));
                 $('#no-of-items').text(`${ls.length}`)
                 console.log("Stored items in localStorage:", ls);
-                console.log("no of items in localStorage:", ls.length);
-
             }
             $('.item-category').hide();
             $('#hotdrinks').show();
@@ -140,12 +139,11 @@ $(document).ready(function () {
             $('.minus').on('click', function () {
                 let count = $(this).siblings('.qty')
                 let currentValue = parseInt(count.val());
+                count.val(currentValue - 1);
                 if (currentValue == 1) {
-                    count.val(currentValue - 1);
                     $(this).parents('.item-count').hide()
                     $(this).parents().siblings('.add-item-btn').show();
                 }
-                else count.val(currentValue - 1);
                 saveToLocalStorage()
                 updateTotalPrice()
             })
@@ -209,40 +207,54 @@ $(document).ready(function () {
         $('#order-in-process').show();
         let ls = JSON.parse(localStorage.getItem('items'));
         let completedRequests = 0;
-        ls.forEach(function (data) {
-            $("#submit-form").submit((e) => {
-                e.preventDefault()
-                $('#f-details').empty()
-               
-                let total = data.quantity * data.price
 
-                details_html = `
-                                <input type="text" value="${data.name}" id="f-name" name="name" style="display: none;">
-                                <input type="text" value="${data.price}" id="f-price" name="price" style="display: none;">
-                                <input type="text" value="${data.quantity}" id="f-quantity" name="quantity" style="display: none;">
-                                <input type="text" value="${total}" id="f-total" name="total" style="display: none;">
+        $("#submit-form").submit((e) => {
+            e.preventDefault()
+            $('#f-details').empty()
 
-                    `
-                $('#f-details').append(details_html)
+            // let total = data.quantity * data.price
 
-                $.ajax({
-                    url: mail_url,
-                    data: $("#submit-form").serialize(),
-                    method: "post",
-                    success: function (response) {
-                        console.log("response", response)
-                        completedRequests++;
-                        if (completedRequests === ls.length) {
-                            localStorage.removeItem('items');
-                            alert("Order completed successfully")
-                            window.location.reload()
-                        }
-                    },
-                    error: function (err) {
-                        alert("Something Error")
-                    }
-                })
+            // details_html = `
+            //                 <input type="text" value="${data.name}" id="f-name" name="name" style="display: none;">
+            //                 <input type="text" value="${data.price}" id="f-price" name="price" style="display: none;">
+            //                 <input type="text" value="${data.quantity}" id="f-quantity" name="quantity" style="display: none;">
+            //                 <input type="text" value="${total}" id="f-total" name="total" style="display: none;">
+            //                `
+
+            ls.forEach(function (data) {
+                $('#od').append(`
+                    [name: ${data.name},
+                    price: ${data.price},
+                    quantity: ${data.quantity}]
+                    `)
+            })
+
+            od = document.getElementById('od').innerText
+            console.log('od', od)
+            details_html = `
+                            <input type="text" value="${od}" id="f-name" name="order_data" style="display: none;">
+                            `
+
+            $('#f-details').append(details_html)
+
+            $.ajax({
+                url: mail_url,
+                data: $("#submit-form").serialize(),
+                method: "post",
+                success: function (response) {
+                    console.log("response", response)
+                    completedRequests++;
+                    // if (completedRequests === ls.length) {
+                    localStorage.removeItem('items');
+                    alert("Order completed successfully")
+                    window.location.reload()
+                    // }
+                },
+                error: function (err) {
+                    alert("Something Error")
+                }
             })
         })
+
     })
 });
