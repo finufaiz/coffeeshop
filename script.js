@@ -41,7 +41,6 @@ $(document).ready(function () {
                             </div>
                         </div>`
 
-                //style="display:none;"
                 if (data.category == 'Hot Drinks') {
                     $("#hotdrinks").append(item_div_html);
                 }
@@ -72,7 +71,6 @@ $(document).ready(function () {
                             $(this).find(".add-item-btn").hide()
                             $(this).find(".item-count").show()
                             $(".total-price").show()
-                            // $('#no-of-items').html(`${cart_datas.length}`)
 
                         }
                     }
@@ -148,8 +146,6 @@ $(document).ready(function () {
                 updateTotalPrice()
             })
 
-
-
             $('#hotdrinks_nav').on('click', function () {
                 $('.item-category').hide();
                 $('#hotdrinks').show();
@@ -193,9 +189,6 @@ $(document).ready(function () {
                     $('#complete-order').hide();
                 })
             }
-
-
-
         },
         error: function () {
             console.log("An error occurred while loading the JSON.");
@@ -206,28 +199,20 @@ $(document).ready(function () {
         $('#complete-order').hide();
         $('#order-in-process').show();
         let ls = JSON.parse(localStorage.getItem('items'));
-        let completedRequests = 0;
-
         $("#submit-form").submit((e) => {
             e.preventDefault()
             $('#f-details').empty()
 
-            // let total = data.quantity * data.price
-
-            // details_html = `
-            //                 <input type="text" value="${data.name}" id="f-name" name="name" style="display: none;">
-            //                 <input type="text" value="${data.price}" id="f-price" name="price" style="display: none;">
-            //                 <input type="text" value="${data.quantity}" id="f-quantity" name="quantity" style="display: none;">
-            //                 <input type="text" value="${total}" id="f-total" name="total" style="display: none;">
-            //                `
-
+            var total = 0
             ls.forEach(function (data) {
                 $('#od').append(`
-                    [name: ${data.name},
-                    price: ${data.price},
-                    quantity: ${data.quantity}]
+                    [name : ${data.name},
+                    price : ${data.price},
+                    quantity : ${data.quantity}]
                     `)
+                total += (data.quantity * data.price)
             })
+            $('#od').append(`[total price : ${total}]`)
 
             od = document.getElementById('od').innerText
             console.log('od', od)
@@ -243,18 +228,15 @@ $(document).ready(function () {
                 method: "post",
                 success: function (response) {
                     console.log("response", response)
-                    completedRequests++;
-                    // if (completedRequests === ls.length) {
                     localStorage.removeItem('items');
                     alert("Order completed successfully")
                     window.location.reload()
-                    // }
                 },
                 error: function (err) {
                     alert("Something Error")
+                    window.location.reload()
                 }
             })
         })
-
     })
 });
