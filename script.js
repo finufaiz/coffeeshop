@@ -1,6 +1,5 @@
 $(document).ready(function () {
     mail_url = "https://script.google.com/macros/s/AKfycbxl89M-M-MggHi4c8RAjpQUT3QezF373Du73nToNVu_WnySpqpX9SD43JjOuWxbJAQu/exec"
-    multi_url="https://script.google.com/macros/s/AKfycbwbMjjIofOz0hDLyuXPFKD5JQtDdhFk5zvA2HXIamWaNwxgsJYIFGp5g8o-GYr83Us-/exec"
     cart_datas = JSON.parse(localStorage.getItem('items')) || [];
     $('#no-of-items').html(`${cart_datas.length}`)
     console.log('cart:', cart_datas)
@@ -13,7 +12,6 @@ $(document).ready(function () {
                 var foundItem = cart_datas.find(cartItem => cartItem.name === data.name);
                 if (foundItem) {
                     quantity = foundItem.quantity;
-                    console.log('quantity', quantity)
                 } else {
                     quantity = 0;
                 }
@@ -68,7 +66,6 @@ $(document).ready(function () {
                     let quantity = parseInt($(this).find('.qty').val());
                     {
                         if (quantity != 0) {
-                            // console.log('quantitty', quantity)
                             $(this).find(".add-item-btn").hide()
                             $(this).find(".item-count").show()
                             $(".total-price").show()
@@ -105,7 +102,6 @@ $(document).ready(function () {
                         }
 
                     }
-                    //else if (existingItem) 
                     else {
                         items = items.filter(item => item.name !== itemName);
                     }
@@ -209,7 +205,8 @@ $(document).ready(function () {
                 $('#od').append(`
                     [name : ${data.name},
                     price : ${data.price},
-                    quantity : ${data.quantity}]____
+                    quantity : ${data.quantity}]
+                    ____
                     `)
 
                 total += (data.quantity * data.price)
@@ -235,8 +232,8 @@ $(document).ready(function () {
                     window.location.reload()
                 },
                 error: function (err) {
-                    console.log("Some Error",err)
-                    alert("Some Error",err)
+                    console.log("Some Error", err)
+                    alert("Some Error", err)
                     window.location.reload()
                 }
             })
